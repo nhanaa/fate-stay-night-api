@@ -1,0 +1,38 @@
+[
+    {
+        "id": "shirou-emiya",
+        "name": "Shirou Emiya",
+        "gender": "male",
+        "height": "167cm",
+        "age": 17,
+        "weight": "58kg",
+        "birthday": "unknown",
+        "species": ["Human", "Magus", "Puppet"],
+        "role": "Master",
+        "image": ""
+    },
+    {
+        "id": "rin-tohsaka",
+        "name": "Rin Tohsaka",
+        "gender": "female",
+        "height": "159cm",
+        "age": 17,
+        "weight": "47kg",
+        "birthday": "February 3",
+        "species": ["Human", "Magus"],
+        "role": "Master",
+        "image": ""
+    },
+    {
+        "id": "sakura-matou",
+        "name": "Sakura Matou",
+        "gender": "female",
+        "height": "156cm",
+        "age": 16,
+        "weight": "46kg",
+        "birthday": "March 2",
+        "species": ["Human", "Magus"],
+        "role": "Master",
+        "image": ""
+    }
+]
