@@ -130,5 +130,29 @@
     "species": ["Human"],
     "role": "master",
     "image": ""
+  },
+  {
+    "id": "taiga-fujimura",
+    "name": "Taiga Fujimura",
+    "gender": "female",
+    "height": "165cm",
+    "age": 24,
+    "weight": "53kg",
+    "birthday": "unknown",
+    "species": ["Human"],
+    "role": "non-participant",
+    "image": ""
+  },
+  {
+    "id": "caster-medea",
+    "name": "Medea",
+    "gender": "female",
+    "height": "163cm",
+    "age": 24,
+    "weight": "51kg",
+    "birthday": "unknown",
+    "species": ["Servant", "Human", "Magus"],
+    "role": "servant",
+    "image": ""
   }
 ]

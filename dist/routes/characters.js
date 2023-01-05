@@ -23,4 +23,8 @@ charactersRouter.get("/masters", (req, res) => {
 charactersRouter.get("/servants", (req, res) => {
     res.status(200).json(characters_json_1.default.filter((character) => character.role === "servant"));
 });
+// GET non-participant characters
+charactersRouter.get("/non-participant", (req, res) => {
+    res.status(200).json(characters_json_1.default.filter((character) => character.role === "non-participant"));
+});
 exports.default = charactersRouter;

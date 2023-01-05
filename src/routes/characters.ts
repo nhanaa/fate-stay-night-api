@@ -31,4 +31,10 @@ charactersRouter.get("/servants", (req, res) => {
   res.status(200).json(charactersJSON.filter((character: character) => character.role === "servant"))
 });
 
+// GET non-participant characters
+charactersRouter.get("/non-participant", (req, res) => {
+  res.status(200).json(charactersJSON.filter((character: character) => character.role === "non-participant"))
+})
+
+
 export default charactersRouter;
