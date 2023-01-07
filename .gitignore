@@ -3,4 +3,6 @@
 
 # Packages
 node_modules
+
+# Compiled ts
 dist
