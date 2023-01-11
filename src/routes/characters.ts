@@ -1,6 +1,24 @@
 import { Router, Request, Response } from 'express';
 import charactersJSON from '../../data/characters/characters.json';
 
+/**
+ * @openapi
+ * /:
+ *  get:
+ *    description: List information of all characters
+ *    response:
+ *      200:
+ *        description: The list of information of all characters
+ *        content:
+ *          application/json:
+ *            schema:
+ *              type: array
+ *              items:
+ *                type: string
+ *      500:
+ *         description: Server error
+ */
+
 const charactersRouter: Router = Router();
 
 interface Character {

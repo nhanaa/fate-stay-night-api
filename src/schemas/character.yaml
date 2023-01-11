@@ -1,0 +1,24 @@
+type: object
+properties:
+  id:
+    type: string
+  name:
+    type: string
+  gender:
+    type: string
+  height:
+    type: string
+  age:
+    type: integer
+  weight:
+    type: string
+  birthday:
+    type: string
+  species:
+    type: array
+    items:
+      type: string
+  role:
+    type: string
+  image:
+    type: string
