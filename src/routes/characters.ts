@@ -1,34 +1,16 @@
 import { Router, Request, Response } from 'express';
 import charactersJSON from '../../data/characters/characters.json';
 
-/**
- * @openapi
- * /:
- *  get:
- *    description: List information of all characters
- *    response:
- *      200:
- *        description: The list of information of all characters
- *        content:
- *          application/json:
- *            schema:
- *              type: array
- *              items:
- *                type: string
- *      500:
- *         description: Server error
- */
-
 const charactersRouter: Router = Router();
 
 interface Character {
-  id?: string;
-  role?: string;
-  image?: string;
+  id: string;
+  role: string;
+  image: string;
 }
 
 // GET all characters
-charactersRouter.get("/", (req, res) => {
+charactersRouter.get("/", (req: Request, res: Response) => {
   try {
     res.status(200).json(charactersJSON);
   }
@@ -38,7 +20,7 @@ charactersRouter.get("/", (req, res) => {
 });
 
 // GET character by id
-charactersRouter.get("/id/:id", (req, res) => {
+charactersRouter.get("/id/:id", (req: Request, res: Response) => {
   const {id} = req.params;
   try {
     res.status(200).json(charactersJSON.filter((character: Character) => character.id === id));
@@ -49,7 +31,7 @@ charactersRouter.get("/id/:id", (req, res) => {
 });
 
 // GET masters characters
-charactersRouter.get("/masters", (req, res) => {
+charactersRouter.get("/masters", (req: Request, res: Response) => {
   try {
     res.status(200).json(charactersJSON.filter((character: Character) => character.role === "master"));
   }
@@ -59,7 +41,7 @@ charactersRouter.get("/masters", (req, res) => {
 });
 
 // GET servants characters
-charactersRouter.get("/servants", (req, res) => {
+charactersRouter.get("/servants", (req: Request, res: Response) => {
   try {
     res.status(200).json(charactersJSON.filter((character: Character) => character.role === "servant"));
   }
@@ -69,7 +51,7 @@ charactersRouter.get("/servants", (req, res) => {
 });
 
 // GET non-participant characters
-charactersRouter.get("/non-participant", (req, res) => {
+charactersRouter.get("/non-participants", (req: Request, res: Response) => {
   try {
     res.status(200).json(charactersJSON.filter((character: Character) => character.role === "non-participant"));
   }
