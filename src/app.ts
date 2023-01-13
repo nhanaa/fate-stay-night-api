@@ -1,0 +1,20 @@
+import express, { Express, NextFunction, Request, Response } from 'express';
+import charactersRoutes from './routes/characters';
+
+
+const app: Express = express();
+
+
+// middleware
+app.use(express.json());
+
+// print out path
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  console.log(req.path, req.body);
+  next();
+});
+
+app.use("/api/characters", charactersRoutes);
+
+export default app;
