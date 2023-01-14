@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:init": "jest --init",
-    "start": "node dist/server.ts",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+    "start": "node dist/src/server.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/src/server.js\""
   },
   "author": "",
   "license": "ISC",
