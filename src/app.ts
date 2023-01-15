@@ -1,6 +1,6 @@
 import express, { Express, NextFunction, Request, Response } from 'express';
 import charactersRoutes from './routes/characters';
-
+import noblePhantasmsRoutes from './routes/noble-phantasms'
 
 const app: Express = express();
 
@@ -16,5 +16,6 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 });
 
 app.use("/api/characters", charactersRoutes);
+app.use("/api/noble-phantasm", noblePhantasmsRoutes);
 
 export default app;

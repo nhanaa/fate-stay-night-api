@@ -1,8 +1,7 @@
 import { Router, Request, Response } from 'express';
-import charactersJSON from '../../data/characters/characters.json';
+import charactersJSON from '../../data/characters.json';
 
 const charactersRouter: Router = Router();
-
 interface Character {
   id: string;
   role: string;
