@@ -5,8 +5,6 @@ dotenv.config();
 
 const port = process.env.PORT || 4000;
 
-const server = app.listen(app.get("port"), () => {
+app.listen(port, () => {
   console.log("Listening on port", port);
 });
-
-export default server;

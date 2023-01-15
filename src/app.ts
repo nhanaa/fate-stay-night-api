@@ -4,7 +4,6 @@ import noblePhantasmsRoutes from './routes/noble-phantasms'
 
 const app: Express = express();
 
-
 // middleware
 app.use(express.json());
 
@@ -16,6 +15,6 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 });
 
 app.use("/api/characters", charactersRoutes);
-app.use("/api/noble-phantasm", noblePhantasmsRoutes);
+app.use("/api/noble-phantasms", noblePhantasmsRoutes);
 
 export default app;
