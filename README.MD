@@ -1,6 +1,6 @@
-#Fate/Stay Night REST API
+# Fate/Stay Night REST API
 ![screenshot](https://static.wikia.nocookie.net/typemoon/images/0/0e/Fate_Stay_Night_-_Logo.png/revision/latest?cb=20210409122858)
-##About the project
+## About the project
 This project is a REST API to get information from the series famous series Fate Stay Night created by the author Kinoku Nasu and first published as a visual novel by Type-Moon.
 
 This project was built with:
