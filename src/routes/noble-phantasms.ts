@@ -7,22 +7,34 @@ interface NoblePhantasm {
   id: string;
   name: string;
   rank: string;
+  owner: string;
+  type: string;
 }
 
-// GET all noble phantasms
+// GET all noble phantasms (can be filtered by owner and type)
 noblePhantasmsRouter.get("/", (req: Request, res: Response) => {
+  const type = req.query.type;
+  const owner = req.query.owner;
+  let filteredNoblePhantasms: Array<NoblePhantasm> = noblePhantasmsJSON;
   try {
-    res.status(200).json(noblePhantasmsJSON);
+    // If statement to check if there is type query
+    if (type) {
+      filteredNoblePhantasms = filteredNoblePhantasms.filter((np: NoblePhantasm) => np.type === type);
+    }
+    if (owner) {
+      filteredNoblePhantasms = filteredNoblePhantasms.filter((np: NoblePhantasm) => np.owner === owner);
+    }
+    res.status(200).json(filteredNoblePhantasms);
   } catch (err) {
     res.status(500).send(err);
   }
 });
 
 // GET noble phantasm by id
-noblePhantasmsRouter.get("/:id", (req: Request, res: Response) => {
+noblePhantasmsRouter.get("/id/:id", (req: Request, res: Response) => {
   const { id } = req.params;
   try {
-    res.status(200).json(noblePhantasmsJSON.filter((np: NoblePhantasm) => np.id === id))
+    res.status(200).json(noblePhantasmsJSON.filter((np: NoblePhantasm) => np.id === id)[0]);
   } catch (err) {
     res.status(500).send(err);
   }
