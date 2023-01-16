@@ -1,0 +1,114 @@
+[
+  {
+    "id": "excalibur",
+    "name": "Excalibur",
+    "title": "Sword of Promised Victory",
+    "owner": "Artoria Pendragon",
+    "rank": "A++",
+    "type": "Anti-Fortress"
+  },
+  {
+    "id": "invisible-air",
+    "name": "Invisible Air",
+    "title": "Barrier of the Wind King",
+    "owner": "Artoria Pendragon",
+    "rank": "C",
+    "type": "Anti-Unit"
+  },
+  {
+    "id": "ubw",
+    "name": "Unlimited Blade Works",
+    "title": "Infinite Creation of Swords",
+    "owner": "EMIYA",
+    "rank": "E~A++",
+    "type": "Unknown"
+  },
+  {
+    "id": "gae-blog",
+    "name": "Gae Bolg",
+    "title": "Barbed Spear that pierces with Death",
+    "owner": "Cu Chulainn",
+    "rank": "B",
+    "type": "Anti-Unit"
+  },
+  {
+    "id": "gob",
+    "name": "Gate of Babylon",
+    "title": "The King's Treasure",
+    "owner": "Gilgamesh",
+    "rank": "E~A++",
+    "type": "Anti-Unit"
+  },
+  {
+    "id": "ea",
+    "name": "Enuma Elish",
+    "title": "Sword of Rupture",
+    "owner": "Gilgamesh",
+    "rank": "EX",
+    "type": "Anti-World"
+  },
+  {
+    "id": "bellerophon",
+    "name": "Bellerophon",
+    "title": "Bridle of Chivalry",
+    "owner": "Medusa",
+    "rank": "A++",
+    "type": "Anti-Army"
+  },
+  {
+    "id": "bfa",
+    "name": "Blood Fort Andromeda",
+    "title": "Outer Seal Blood Temple",
+    "owner": "Medusa",
+    "rank": "B",
+    "type": "Anti-Army"
+  },
+  {
+    "id": "breaker-gorgon",
+    "name": "Breaker Gorgon",
+    "title": "Self Seal - Dark Temple",
+    "owner": "Medusa",
+    "rank": "C-",
+    "type": "Anti-Unit"
+  },
+  {
+    "id": "nine-lives",
+    "name": "Nine Lives",
+    "title": "Shooting the Hundred Heads",
+    "owner": "Heracles",
+    "rank": "C~A+",
+    "type": "Unknown"
+  },
+  {
+    "id": "god-hand",
+    "name": "God Hand",
+    "title": "Twelve Labors",
+    "owner": "Heracles",
+    "rank": "B",
+    "type": "Anti-Unit"
+  },
+  {
+    "id": "rule-breaker",
+    "name": "Rule Breaker",
+    "title": "All Spells Must Be Broken",
+    "owner": "Medea",
+    "rank": "C",
+    "type": "Anti-Thaumaturgy"
+  },
+  {
+    "id": "tsubame-gaeshi",
+    "name": "Hiken - Tsubame Gaeshi",
+    "title": "Secret Sword: Swallow Return",
+    "owner": "Sasaki Kojiro",
+    "rank": "unknown",
+    "type": "Anti-Unit Mystic Sword"
+  },
+  {
+    "id": "zabinya",
+    "name": "Zabaniya",
+    "title": "Delusional Heartbeat",
+    "owner": "Hassan of the Cursed Arm",
+    "rank": "C",
+    "type": "Anti-Unit"
+  }
+]

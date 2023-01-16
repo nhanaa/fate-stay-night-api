@@ -1,8 +1,7 @@
 import { Router, Request, Response } from 'express';
-import charactersJSON from '../../data/characters/characters.json';
+import charactersJSON from '../../data/characters.json';
 
 const charactersRouter: Router = Router();
-
 interface Character {
   id: string;
   role: string;
@@ -23,7 +22,7 @@ charactersRouter.get("/", (req: Request, res: Response) => {
 charactersRouter.get("/id/:id", (req: Request, res: Response) => {
   const {id} = req.params;
   try {
-    res.status(200).json(charactersJSON.filter((character: Character) => character.id === id));
+    res.status(200).json(charactersJSON.filter((character: Character) => character.id === id)[0]);
   }
   catch (err) {
     res.status(500).send(err);

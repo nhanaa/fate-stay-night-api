@@ -30,12 +30,12 @@ describe("GET /api/characters", () => {
 });
 
 describe("GET /api/characters/id/:id", () => {
-  it("should return a character", async () => {
-    const response = await request(server).get("/api/characters/id/shirou-emiya");
+  it.each(["shirou-emiya", "illya", "caster-medea"]) ("when id is '%s", async (id) => {
+    const response = await request(server).get(`/api/characters/id/${id}`);
     expect(response.status).toBe(200);
     expect(response.type).toBe("application/json");
     expect(response.body).toBeInstanceOf(Object);
-    expect(response.body.name === "Shirou Emiya");
+    expect(response.body.id).toBe(id);
   });
 });
 
