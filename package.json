@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:init": "jest --init",
-    "start": "node dist/src/server.js",
+    "start": "npx tsc && npm run copy-data && node dist/src/server.js",
     "dev": "concurrently \"npm run copy-data\" \"npx tsc --watch\"  \"nodemon -q dist/src/server.js\"",
     "copy-data": "copyfiles -u -E \"./data/*\" ./dist",
     "clean": "rimraf ./dist/data"
